@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Philosophy\\Philosophy.csproj",
-      "projectName": "Philosophy",
-      "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Philosophy\\Philosophy.csproj",
+      "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Presentation\\Presentation.csproj",
+      "projectName": "Presentation",
+      "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\zefir\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Philosophy\\obj\\",
+      "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zefir\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,4 @@
-namespace Philosophy;
+namespace Presentation;
 
 public class WeatherForecast
 {
