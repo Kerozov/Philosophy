@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pIvCLK9dN4gdlZ4Sn8z07qqrzaLuTrb/LKYA7aT8lk0XKkFviW/UWKwhvpmkm6jRvqsHNX1pDT7+G/GOIXpZdQ==",
+  "dgSpecHash": "O3svpRlKnYVjBbW43yw4Us6NPdPfejFMAHES41OlymHX2TSDWtbmzqToDvbjoZwH+onGvZER/QLQGB24ZkAkrA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zefir\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-rc.1.23419.4\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.1.23419.4.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
