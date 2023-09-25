@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NgF2F99Ws8KTB1GpQ0Ai+v1qdbuOSY1AHWiT+NNcu51yKMVFeAw9nh085w6muYV42ipQwjOZre0N2koIlhEMrw==",
+  "dgSpecHash": "dYnSX3U7VysbQ5h5gUwddb4G4i6lqjA8ugOt+/8JGXZuBRPr4zneULlLhsk020C7dHwTwbmxeLyWp87o7Ykluw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

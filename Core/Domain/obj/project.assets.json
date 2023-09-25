@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\zefir\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Domain\\obj\\",
+      "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zefir\\AppData\\Roaming\\NuGet\\NuGet.Config",

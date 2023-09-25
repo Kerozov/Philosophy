@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
       }
     }
   },
@@ -460,10 +470,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Core/Application/Application.csproj",
+      "msbuildProject": "../Core/Application/Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -494,7 +510,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\philosophy\\Philosophy\\Core\\Application\\Application.csproj": {
+              "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Application\\Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
