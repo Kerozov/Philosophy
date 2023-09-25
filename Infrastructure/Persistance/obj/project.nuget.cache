@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3xTkmwUP9srmLIIp3/ykD1HOxtN/vZvX+tLNLFPRhHJkFLLozU33s9S/2jVAoqkEEXcFposj8FWMsu4eZii+bg==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-rc.1.23419.4\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.1.23419.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -5,28 +5,34 @@ namespace Application.Services;
 
 public class EssayService: IEssayService
 {
+    private readonly IEssayRepository _essayRepository;
+
+    public EssayService(IEssayRepository essayRepository)
+    {
+        _essayRepository = essayRepository;
+    }
     public Task<List<string>> GetAllEssay()
     {
-        throw new NotImplementedException();
+      return  _essayRepository.GetAllEssay();
     }
 
     public Task<string> GetEssayById(int essayId)
     {
-        throw new NotImplementedException();
+        return _essayRepository.GetEssayById(essayId);
     }
 
     public Task<int> UpdateEssay(int id, UpdateEssayDto essay)
     {
-        throw new NotImplementedException();
+        return _essayRepository.UpdateEssay(id, essay);
     }
 
     public Task<int> AddEssay(AddEssayDto essay)
     {
-        throw new NotImplementedException();
+        return _essayRepository.AddEssay(essay);
     }
 
     public Task<int> DeleteEssay(int essayId)
     {
-        throw new NotImplementedException();
+        return _essayRepository.DeleteEssay(essayId);
     }
 }

@@ -10,6 +10,11 @@ public class EssayController: ControllerBase
 {
     private IEssayService _essayService;
 
+    public EssayController(IEssayService essayService)
+    {
+        _essayService = essayService;
+    }
+    
     [HttpGet]
     [Route("All")]
     public async Task<List<string>> GetAllEssay()
