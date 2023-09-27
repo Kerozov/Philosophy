@@ -44,7 +44,7 @@ public class EssayController: ControllerBase
     }
     
     [HttpDelete]
-    [Route("Delete/{id}")]
+    [Route("Delete/{essayId}")]
     public async Task<int> UpdateEssay(int essayId)
     {
         return await _essayService.DeleteEssay(essayId);

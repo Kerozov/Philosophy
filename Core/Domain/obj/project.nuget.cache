@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "dYnSX3U7VysbQ5h5gUwddb4G4i6lqjA8ugOt+/8JGXZuBRPr4zneULlLhsk020C7dHwTwbmxeLyWp87o7Ykluw==",
+  "dgSpecHash": "r98TT0OVjj4mmAsXQPasDiBmUgdM2Y2Vd4f/Hw+CuHAakEyiyqGUvxH/dail2BceY0bzTqKw1VY6+YAoQs8SUg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zefir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\zefir\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

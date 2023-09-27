@@ -1,15 +1,19 @@
 using Application.Models.EssayModels.Dtos;
 using Application.Models.EssayModels.Interfaces;
+using AutoMapper;
+using Domain.Entities;
 
 namespace Application.Services;
 
 public class EssayService: IEssayService
 {
     private readonly IEssayRepository _essayRepository;
+    private readonly IMapper _mapper;
 
-    public EssayService(IEssayRepository essayRepository)
+    public EssayService(IEssayRepository essayRepository, IMapper mapper)
     {
         _essayRepository = essayRepository;
+        _mapper = mapper;
     }
     public Task<List<string>> GetAllEssay()
     {
@@ -21,9 +25,9 @@ public class EssayService: IEssayService
         return _essayRepository.GetEssayById(essayId);
     }
 
-    public Task<int> UpdateEssay(int id, UpdateEssayDto essay)
+    public Task<int> UpdateEssay(int essayId, UpdateEssayDto essaytoUpdate)
     {
-        return _essayRepository.UpdateEssay(id, essay);
+        return _essayRepository.UpdateEssay(essayId, essaytoUpdate);
     }
 
     public Task<int> AddEssay(AddEssayDto essay)

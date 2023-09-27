@@ -6,8 +6,8 @@ public interface IEssayService
 {
     public Task<List<string>> GetAllEssay();
     public Task<string> GetEssayById(int essayId);
-    public Task<int> UpdateEssay(int id, UpdateEssayDto essay);
-    public Task<int> AddEssay(AddEssayDto essay);
+    public Task<int> UpdateEssay(int essayId, UpdateEssayDto essayToUpdate);
+    public Task<int> AddEssay(AddEssayDto essayToAdd);
     
     public Task<int> DeleteEssay(int essayId);
 
