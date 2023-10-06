@@ -570,6 +570,16 @@ section {
   background: url(../img/about-img.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
+#about1 .about-container .background {
+  min-height: 300px;
+  background: url(../img/about-1.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
+#about2 .about-container .background {
+  min-height: 300px;
+  background: url(../img/about-2.jpg) center top no-repeat;
+  margin-bottom: 10px;
+}
 #about .about-container .content {
   background: #fff;
 }
@@ -598,6 +608,7 @@ section {
   background: #fff;
   background-size: cover;
   padding: 0 0 30px 0;
+  icon-png: url(../img/icon-1.png)
 }
 
 #about .about-container .icon-box .icon {
