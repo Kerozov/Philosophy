@@ -7,4 +7,7 @@ public class AddEssayDto
     public int Rating { get; set; }
     
     public string CreatorName { get; set; }
+    
+    public string Title { get; set; }
+
 }

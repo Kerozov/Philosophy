@@ -16,4 +16,8 @@ public class Essay
     
     [MinLength(3)]
     public string CreatorName { get; set; }
+    
+    [MinLength(3)]
+    public string Title { get; set; }
+
 }

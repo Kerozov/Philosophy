@@ -13,11 +13,6 @@ public static class ConfigurationRepositories
         
         services.AddAutoMapper(typeof(EssayProfile).Assembly);
         services.AddScoped<IEssayRepository, EssayRepository>();
-        services.AddDbContext<ApplicationDbContext>(options =>
-        {
-            
-            options.UseSqlServer("Server=.;Database=Philosophy;Integrated Security=True;Encrypt=False;");
-        });
         return services;
     }
 }
