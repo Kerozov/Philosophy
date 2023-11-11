@@ -20,7 +20,7 @@ public class EssayService: IEssayService
       return  _essayRepository.GetAllEssay();
     }
 
-    public Task<string> GetEssayById(int essayId)
+    public Task<EssaysListDto> GetEssayById(int essayId)
     {
         return _essayRepository.GetEssayById(essayId);
     }

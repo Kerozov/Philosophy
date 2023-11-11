@@ -22,13 +22,16 @@ public class EssayRepository: IEssayRepository
      {
          Text = e.Text,
          CreatorName = e.CreatorName,
-         Rating = e.Rating
+         Rating = e.Rating,
+         EssayId = e.EssayId
      }).ToList());
     }
 
-    public Task<string> GetEssayById(int essayId)
+    public Task<EssaysListDto> GetEssayById(int essayId)
     {
-        return  Task.FromResult(_context.Essays.First(e => e.EssayId ==essayId).Text);
+        var essay = _context.Essays.FirstOrDefault(  e => e.EssayId == essayId);
+        var  essayDto = _mapper.Map<EssaysListDto>(essay);
+        return  Task.FromResult(essayDto);
     }
 
     public Task<int> UpdateEssay(int essayId, UpdateEssayDto essaytoUpdate)

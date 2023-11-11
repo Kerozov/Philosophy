@@ -26,7 +26,7 @@ public class EssayController: ControllerBase
     
     [HttpGet]
     [Route("{essayId}")]
-    public async Task<string> GetEssayById(int essayId)
+    public async Task<EssaysListDto> GetEssayById(int essayId)
     {
         return await _essayService.GetEssayById(essayId);
     }

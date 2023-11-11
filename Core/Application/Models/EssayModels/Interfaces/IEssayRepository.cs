@@ -7,7 +7,7 @@ public interface IEssayRepository
 {
     public Task<List<EssaysListDto>> GetAllEssay();
     
-    public Task<string> GetEssayById(int essayId);
+    public Task<EssaysListDto> GetEssayById(int essayId);
     
     public Task<int> UpdateEssay(int id, UpdateEssayDto essay);
     
