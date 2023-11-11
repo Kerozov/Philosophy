@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y8P/RLES0DqKTjLRXaWajoU7cTBtMI373cqep3ABsv6faPx61vXHI+3NIJ/CznOB72Ng72LRaArQODoltlZqZQ==",
+  "dgSpecHash": "RVLW/WvNPR4NY0Fda6EJST30/hLUvtqXmXvLT3oW+K/IIuG1IBwS/nRg01qmvoNZelGs/aLKJm6lWold+JH0gg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Presentation\\Presentation.csproj",
+  "projectFilePath": "D:\\Projects\\Philosophy\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zefir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

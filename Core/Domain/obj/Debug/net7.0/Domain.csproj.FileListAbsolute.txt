@@ -10,3 +10,15 @@ D:\Projects\philosophy\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.dll
 D:\Projects\philosophy\Philosophy\Core\Domain\obj\Debug\net7.0\refint\Domain.dll
 D:\Projects\philosophy\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.pdb
 D:\Projects\philosophy\Philosophy\Core\Domain\obj\Debug\net7.0\ref\Domain.dll
+D:\Projects\Philosophy\Core\Domain\bin\Debug\net7.0\Domain.deps.json
+D:\Projects\Philosophy\Core\Domain\bin\Debug\net7.0\Domain.dll
+D:\Projects\Philosophy\Core\Domain\bin\Debug\net7.0\Domain.pdb
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.dll
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\refint\Domain.dll
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\Domain.pdb
+D:\Projects\Philosophy\Core\Domain\obj\Debug\net7.0\ref\Domain.dll

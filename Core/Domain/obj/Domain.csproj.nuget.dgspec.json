@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj": {}
+    "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj": {
+    "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\zefir\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\obj\\",
+        "outputPath": "D:\\Projects\\Philosophy\\Core\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zefir\\AppData\\Roaming\\NuGet\\NuGet.Config",

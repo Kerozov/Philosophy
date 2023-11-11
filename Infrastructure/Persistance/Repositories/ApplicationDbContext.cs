@@ -13,7 +13,7 @@ public class ApplicationDbContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=Philosophy;IntegratedSecurity=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Server=.;Database=Philosophy;Integrated Security=True;Encrypt=False;");
         }
     }
     public DbSet<Essay> Essays { get; set; }

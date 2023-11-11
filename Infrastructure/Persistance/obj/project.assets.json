@@ -2996,11 +2996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\philosophy\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "D:\\Projects\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
+      "projectPath": "D:\\Projects\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
       "packagesPath": "C:\\Users\\zefir\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\philosophy\\Philosophy\\Infrastructure\\Persistance\\obj\\",
+      "outputPath": "D:\\Projects\\Philosophy\\Infrastructure\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zefir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3017,11 +3017,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\philosophy\\Philosophy\\Core\\Application\\Application.csproj": {
-              "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Application\\Application.csproj"
+            "D:\\Projects\\Philosophy\\Core\\Application\\Application.csproj": {
+              "projectPath": "D:\\Projects\\Philosophy\\Core\\Application\\Application.csproj"
             },
-            "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\Projects\\philosophy\\Philosophy\\Core\\Domain\\Domain.csproj"
+            "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Projects\\Philosophy\\Core\\Domain\\Domain.csproj"
             }
           }
         }

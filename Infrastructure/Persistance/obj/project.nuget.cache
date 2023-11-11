@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6KBwydZgYQlLpzQ3rPQ1KEqif0evJ1E8dYGoSce6bxF5UpzDNMT259fMGV4SQSS1qpPcWgLWaMI7soax23PdlA==",
+  "dgSpecHash": "8f9u+AG2Z0ve8esvkFiYlM5nerwRfSXQLyROX/LqiOJc0OmE/1LAAasEMVQAsy1JzYSvRt1g23QqNZhabScnNw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\philosophy\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
+  "projectFilePath": "D:\\Projects\\Philosophy\\Infrastructure\\Persistance\\Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zefir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\zefir\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
