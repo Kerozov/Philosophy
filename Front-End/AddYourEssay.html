@@ -81,7 +81,7 @@
     </style>
 </head>
 <body>
-    <input id="creator-name" type="text" placeholder="Заглавие на есе">
+    <input id="title" type="text" placeholder="Заглавие на есе">
     <textarea id="text-content" rows="4" cols="50"></textarea>
     <input id="creator-name" type="text" placeholder="Име на създателя">
     <a href="javascript:void(0);" class="button" id="submit-button">
@@ -95,6 +95,8 @@
         document.getElementById('submit-button').addEventListener('click', function () {
             const textContent = document.getElementById('text-content').value;
             const creatorName = document.getElementById('creator-name').value;
+            const title = document.getElementById('creator-name').value;
+
 
             if (!textContent || !creatorName) {
                 alert('Моля, въведете текст и име на създателя.');
@@ -104,7 +106,8 @@
             const data = {
                 text: textContent,
                 rating: 0,
-                creatorName: creatorName
+                creatorName: creatorName,
+                title: title
             };
 
             fetch('http://localhost:5005/api/Essay/Add', {
