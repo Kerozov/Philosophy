@@ -16,9 +16,14 @@ public class EssayRepository: IEssayRepository
         _context = context;
         _mapper = mapper;
     }
-    public Task<List<string>> GetAllEssay()
+    public Task<List<EssaysListDto>> GetAllEssay()
     {
-     return  Task.FromResult(_context.Essays.Select(e=>e.Text).ToList());
+     return  Task.FromResult(_context.Essays.Select(e=>new EssaysListDto()
+     {
+         Text = e.Text,
+         CreatorName = e.CreatorName,
+         Rating = e.Rating
+     }).ToList());
     }
 
     public Task<string> GetEssayById(int essayId)

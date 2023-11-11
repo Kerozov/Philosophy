@@ -4,7 +4,7 @@ namespace Application.Models.EssayModels.Interfaces;
 
 public interface IEssayService
 {
-    public Task<List<string>> GetAllEssay();
+    public Task<List<EssaysListDto>> GetAllEssay();
     public Task<string> GetEssayById(int essayId);
     public Task<int> UpdateEssay(int essayId, UpdateEssayDto essayToUpdate);
     public Task<int> AddEssay(AddEssayDto essayToAdd);

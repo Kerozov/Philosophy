@@ -10,5 +10,7 @@ public class EssayProfile : Profile
     {
         CreateMap<UpdateEssayDto, Essay>();
         CreateMap<AddEssayDto, Essay>();
+        CreateMap<Essay, EssaysListDto>();
+
     }
 }

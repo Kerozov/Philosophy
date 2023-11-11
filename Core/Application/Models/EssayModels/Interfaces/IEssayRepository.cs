@@ -5,7 +5,7 @@ namespace Application.Models.EssayModels.Interfaces;
 
 public interface IEssayRepository
 {
-    public Task<List<string>> GetAllEssay();
+    public Task<List<EssaysListDto>> GetAllEssay();
     
     public Task<string> GetEssayById(int essayId);
     

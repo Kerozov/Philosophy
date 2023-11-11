@@ -1,10 +1,12 @@
 using Application.Models.EssayModels.Dtos;
 using Application.Models.EssayModels.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers;
 
 [Route("api/Essay")]
+[EnableCors("AllowAnyOrigin")]
 [ApiController]
 public class EssayController: ControllerBase
 {
@@ -17,7 +19,7 @@ public class EssayController: ControllerBase
     
     [HttpGet]
     [Route("All")]
-    public async Task<List<string>> GetAllEssay()
+    public async Task<List<EssaysListDto>> GetAllEssay()
     {
         return await _essayService.GetAllEssay();
     }

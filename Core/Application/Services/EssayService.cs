@@ -15,7 +15,7 @@ public class EssayService: IEssayService
         _essayRepository = essayRepository;
         _mapper = mapper;
     }
-    public Task<List<string>> GetAllEssay()
+    public Task<List<EssaysListDto>> GetAllEssay()
     {
       return  _essayRepository.GetAllEssay();
     }

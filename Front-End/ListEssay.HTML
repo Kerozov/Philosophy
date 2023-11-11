@@ -3,44 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essays</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        .card {
-            width: 18rem;
-            margin: 1rem;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-        }
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-        .card-body {
+        body {
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            height: 100%;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
         }
-        .essay {
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .card h2 {
+            color: #333;
+        }
+
+        .modal {
             display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
         }
     </style>
+    <title>Картички с есета</title>
 </head>
 <body>
-    <div id="essay-cards"></div>
+
+    <!-- Картички генерирани динамично от JavaScript -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+            <p id="modalRating"></p>
+            <p id="modalAuthor"></p>
+        </div>
+    </div>
+
     <script>
-        function fetchEssays() {
-            $.ajax({
-                url: 'https://localhost:5001/api/essays', // replace with your API URL
-                type: 'GET',
-                dataType: 'json',
-                success: function(data) {
-                    let cardsHtml = '';
-                    data.forEach(essay => {
-                        cardsHtml += `
-                            <div class="card" data-id="${essay.id}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${essay.title}</h5>
-                                    <p class="card-text">${essay.text.substring(0, 100)}...</p>
-                                    <p class="card-text">Author: ${essay.author}</p>
-                                    <p class="card-text">Rating: ${essay.rating}</
+        // Примерен JavaScript код
+
+        // Функция за отваряне на модалното прозорче
+        function openModal( text, rating, creatorName) {
+            document.getElementById("modalTitle").innerHTML = 'Title';
+            document.getElementById("modalText").innerHTML = text;
+            document.getElementById("modalRating").innerHTML = "Рейтинг: " + rating;
+            document.getElementById("modalAuthor").innerHTML = "Подател: " + creatorName;
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        // Функция за затваряне на модалното прозорче
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        fetch('http://localhost:5005/api/Essay/All')
+            .then(response => response.json())
+            .then(data => {
+                // Генериране на картички от получените данни
+                data.forEach(essay => {
+                    const card = document.createElement("div");
+                    card.classList.add("card");
+                    card.innerHTML = `
+                        <h2>Title</h2>
+                        <p>${essay.text}</p>
+                        <p>Рейтинг: ${essay.rating}</p>
+                        <p>Подател: ${essay.creatorName}</p>
+                    `;
+                    card.addEventListener("click", () => openModal( essay.text, essay.rating, essay.creatorName));
+                    document.body.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
