@@ -149,7 +149,7 @@ body .container .card .box .content a:hover {
                                     <h2>${index + 1}</h2>
                                     <h3>${essayData.creatorName}</h3>
                                     <p>${essayData.text}</p>
-                                    <a href="ViewEssay.html?id=${essayData.id}">Read More</a>
+                                    <a href="ViewEssay.html?id=${essayData.essayId}">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,6 @@ body .container .card .box .content a:hover {
             }
         }
     
-        // Извикване на функцията за извличане на данни и добавяне на картички
         fetchData();
     </script>
     </body>

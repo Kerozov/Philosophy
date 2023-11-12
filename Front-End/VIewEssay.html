@@ -53,14 +53,13 @@
             try {
                 const urlParams = new URLSearchParams(window.location.search);
                 const id = urlParams.get('id');
-                const response = await fetch(`http://localhost:5005/api/Essay/2`);
+                const response = await fetch(`http://localhost:5005/api/Essay/${id}`);
                 const data = await response.json();
 
         
-                const creatorName = data[0].creatorName; 
-                const essayText = data[0].text; 
+                const creatorName = data.creatorName; 
+                const essayText = data.text; 
 
-                // Вмъкване на данните в HTML елементите
                 document.getElementById('creatorName').textContent = creatorName;
                 document.getElementById('essayText').textContent = essayText;
             } catch (error) {
