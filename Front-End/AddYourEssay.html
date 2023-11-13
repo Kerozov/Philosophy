@@ -119,7 +119,11 @@
             })
             .then(response => {
                 if (response.ok) {
-                    console.log('Успешно изпратена POST заявка с текстово съдържание');
+                   
+                    alert('Успешно изпратено есе!')
+                    document.getElementById('title').value = '';
+                    document.getElementById('text-content').value = '';
+                    document.getElementById('creator-name').value = '';
                 } else {
                     console.error('Грешка при изпращане на POST заявка');
                 }
