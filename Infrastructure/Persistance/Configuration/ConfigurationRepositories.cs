@@ -16,7 +16,7 @@ public static class ConfigurationRepositories
         services.AddDbContext<ApplicationDbContext>(options =>
         {
             
-            options.UseSqlServer("Server=.;Database=Philosophy;Integrated Security=True;Encrypt=False;");
+            options.UseSqlServer("Server=.;Database=Philosophy;Trusted_Connection=True;");
         });
         return services;
     }

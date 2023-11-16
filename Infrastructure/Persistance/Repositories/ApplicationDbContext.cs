@@ -9,12 +9,13 @@ public class ApplicationDbContext : DbContext
         : base(options)
     {
     }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseSqlServer("Server=.;Database=Philosophy;Integrated Security=True;Encrypt=False;");
-        }
-    }
     public DbSet<Essay> Essays { get; set; }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Essay>()
+            .Property(e => e.Title)
+            .HasColumnName("Title")
+            .HasMaxLength(255); 
+    }
 }
