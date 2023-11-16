@@ -23,7 +23,8 @@ public class EssayRepository: IEssayRepository
          Text = e.Text,
          CreatorName = e.CreatorName,
          Rating = e.Rating,
-         EssayId = e.EssayId
+         EssayId = e.EssayId,
+         Title = e.Title
      }).ToList());
     }
 

@@ -95,11 +95,12 @@
         document.getElementById('submit-button').addEventListener('click', function () {
             const textContent = document.getElementById('text-content').value;
             const creatorName = document.getElementById('creator-name').value;
-            const title = document.getElementById('creator-name').value;
+            const title = document.getElementById('title').value;
 
 
             if (!textContent || !creatorName) {
                 alert('Моля, въведете текст и име на създателя.');
+                
                 return;
             }
 
@@ -120,11 +121,13 @@
             .then(response => {
                 if (response.ok) {
                    
-                    alert('Успешно изпратено есе!')
                     document.getElementById('title').value = '';
                     document.getElementById('text-content').value = '';
                     document.getElementById('creator-name').value = '';
+                    alert('Успешно изпратено есе');
+                    window.location.href = 'ListEssay.HTML';
                 } else {
+                    alert('Есето не беше изпратено успешно! При проблеми се свържете с нас!');
                     console.error('Грешка при изпращане на POST заявка');
                 }
             })

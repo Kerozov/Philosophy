@@ -18,6 +18,9 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; /* Добавен стил за използване на Flexbox */
+            flex-direction: column; /* Контейнерът ще бъде колона */
+            
         }
 
         h1 {
@@ -40,12 +43,28 @@
             text-align: center;
             margin-bottom: 20px;
         }
+        .creatorContiner{
+            text-align: right;
+            margin-left: auto;
+        }
+        h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#creatorName {
+    text-align: center;
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="creatorName"></h1>
+        <h1 id="title"></h1>
         <p id="essayText"></p>
+        <div class = "creatorContiner">
+        <h3>Есето е написано от: </h3>
+        <p id="creatorName"></p>
+    </div>
     </div>
 
     <script>
@@ -59,7 +78,8 @@
         
                 const creatorName = data.creatorName; 
                 const essayText = data.text; 
-
+                const title = data.title; 
+                document.getElementById('title').textContent = title;
                 document.getElementById('creatorName').textContent = creatorName;
                 document.getElementById('essayText').textContent = essayText;
             } catch (error) {
