@@ -9,22 +9,26 @@ namespace Persistance.Repositories
     {
         public ApplicationDbContext CreateDbContext(string[] args)
         {
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var presentationDirectory = Path.Combine(currentDirectory, "..","..", "Presentation");
-            
-            var appsettingsPath = Path.Combine(presentationDirectory, "Presentation", "appsettings.json");
-            
-            IConfigurationRoot configuration = new ConfigurationBuilder()
-                .SetBasePath(presentationDirectory)
-                .AddJsonFile(appsettingsPath, optional: false)
-                .Build();
+            var connectionString = GetConnectionString();
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
        
             builder.UseSqlServer(connectionString);
 
 
             return new ApplicationDbContext(builder.Options);
+        }
+        private static string? GetConnectionString()
+        {
+            var currentDirectory = Directory.GetCurrentDirectory();
+
+            var appsettingsPath = Path.Combine(currentDirectory, "..", "..", "Presentation",  "appsettings.json");
+
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(currentDirectory)
+                .AddJsonFile(appsettingsPath, optional: false)
+                .Build();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            return connectionString;
         }
     }
 }
