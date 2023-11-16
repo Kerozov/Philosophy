@@ -168,3 +168,6 @@ D:\Projects\Philosophy\Presentation\obj\Debug\net7.0\refint\Presentation.dll
 D:\Projects\Philosophy\Presentation\obj\Debug\net7.0\Presentation.pdb
 D:\Projects\Philosophy\Presentation\obj\Debug\net7.0\Presentation.genruntimeconfig.cache
 D:\Projects\Philosophy\Presentation\obj\Debug\net7.0\ref\Presentation.dll
+D:\Projects\Philosophy\Presentation\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+D:\Projects\Philosophy\Presentation\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Projects\Philosophy\Presentation\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
